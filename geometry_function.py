@@ -26,7 +26,7 @@ def length(contour):
 
   return panjang,lebar#,tltrX, tltrY, blbrX, blbrY, tlblX, tlblY, trbrX, trbrY
 
-def get_mask(outputs):
+def get_mask(outputs,im):
   mask_array = outputs['instances'].pred_masks.cpu().numpy()
   class_array = outputs['instances'].pred_classes.cpu().numpy()
   num_instances = mask_array.shape[0]
