@@ -1,6 +1,7 @@
 from scipy.spatial import distance as dist
 import imutils
 from imutils import perspective
+import numpy as np
 
 # finding mid point
 # function for finding the midpoint
